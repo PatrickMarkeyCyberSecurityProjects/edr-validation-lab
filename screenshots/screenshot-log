@@ -1,10 +1,28 @@
 # Screenshot Log
 
-| Filename | Phase | What it shows | Why it matters | Notes |
-|----------|------|--------------|----------------|-------|
-| 06_git_remote_fixed.png | Phase 1 | Fixed Git remote configuration | Shows Git troubleshooting ability | Corrected origin URL |
-| 07_host_only_adapter_fixed.png | Phase 2 | Host-Only adapter configured correctly in VirtualBox | Shows virtualization/network setup | Required for internal lab network |
-| 08_vm_connectivity_problem.png | Phase 2 | Initial connectivity failure between systems | Shows troubleshooting process | Used for debugging |
-| 09_windows_icmp_firewall_fix.png | Phase 2 | Windows firewall rule allowing ICMP traffic | Shows endpoint firewall troubleshooting | Required for ping success |
-| 10_wazuh_to_linux_ping_success.png | Phase 2 | Successful ping from Wazuh server to Linux endpoint | Confirms internal connectivity | Host-only network validated |
-| 11_full_connectivity_success.png | Phase 2 | Full connectivity between all lab systems | Final network validation | Phase 2 completion |
+| Filename | Phase | What it shows | Why it matters |
+|---|---|---|---|
+| 06_git_remote_fixed.png | Phase 1 | Git remote issue fixed | Shows repo setup troubleshooting |
+| 07_host_only_adapter_fixed.png | Phase 2 | Host-only adapter configured correctly | Shows virtualization / networking setup |
+| 08_vm_connectivity_problem.png | Phase 2 | Initial VM connectivity issue | Documents troubleshooting path |
+| 09_windows_icmp_firewall_fix.png | Phase 2 | Windows firewall fix for ICMP | Shows endpoint-side connectivity troubleshooting |
+| 10_wazuh_to_linux_ping_success.png | Phase 2 | Successful Wazuh-to-Linux connectivity | Confirms internal network path |
+| 11_full_connectivity_success.png | Phase 2 | Full internal lab connectivity | Confirms Phase 2 completion |
+| 12_wazuh_server_vm.png | Phase 2 | Wazuh Server VM in VirtualBox | Documents SIEM VM |
+| 13_windows_endpoint_vm.png | Phase 2 | Windows endpoint VM in VirtualBox | Documents monitored Windows asset |
+| 14_linux_endpoint_vm.png | Phase 2 | Linux endpoint VM in VirtualBox | Documents monitored Linux asset |
+| 15_all_vms_running_virtualbox.png | Phase 2 | All VMs running in VirtualBox | Proves full lab environment was live |
+| 16_dashboard_connection_refused.png | Phase 3 | Browser could not initially reach Wazuh dashboard | Documents dashboard access issue |
+| 17_wazuh_services_not_found.png | Phase 3 | Wazuh services not found before proper install | Documents initial install gap |
+| 18_wazuh_installer_downloaded.png | Phase 3 | Wazuh installer downloaded via curl | Documents SIEM deployment step |
+| 19_wazuh_password_reset.png | Phase 3 | Wazuh password reset output | Documents credential recovery |
+| 20_wazuh_login_failed.png | Phase 3 | Failed Wazuh login attempt | Documents auth troubleshooting |
+| 21_wazuh_dashboard_login_success.png | Phase 3 | Successful Wazuh dashboard access | Confirms SIEM access |
+| 22_windows_agent_install.png | Phase 4 | Wazuh Windows agent installation using server IP | Documents endpoint onboarding |
+| 23_windows_wazuh_service_running.png | Phase 4 | Windows Services showing Wazuh agent running | Confirms endpoint agent health |
+| 24_windows_agent_active_in_wazuh.png | Phase 4 | Windows endpoint shown as active in Wazuh | Confirms central visibility |
+| 25_sysmon_download_page.png | Phase 4 | Sysmon download page from Microsoft Sysinternals | Documents telemetry tool source |
+| 26_sysmon_install_success.png | Phase 4 | Successful Sysmon installation in PowerShell | Confirms telemetry tool deployment |
+| 27_windows_activity_generation.png | Phase 5 | Windows commands used to generate telemetry | Documents event generation workflow |
+| 28_sysmon_eventchannel_config_added.png | Phase 5 | Sysmon event channel block added to `ossec.conf` | Documents Wazuh agent telemetry configuration |
+| 29_wazuh_sysmon_filter_created.png | Phase 5 | Sysmon filter created in Wazuh Threat Hunting | Shows event filtering workflow |
