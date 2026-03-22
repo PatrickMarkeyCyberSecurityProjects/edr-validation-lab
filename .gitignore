@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+.vscode/
+.env
+*.zip
+*.7z
+*.iso
+*.ova
+*.vdi
+*.vmdk

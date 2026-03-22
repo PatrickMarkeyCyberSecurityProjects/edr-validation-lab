@@ -1,0 +1,6 @@
+# Screenshot Log
+
+| Filename | Phase | What it shows | Why it matters | Notes |
+|----------|------|--------------|----------------|-------|
+| 04_architecture_diagram_v1.png | Phase 1 | Initial lab architecture diagram showing Wazuh server, Windows endpoint, and network layout | Demonstrates lab design and planning ability | Will refine after Phase 2 |
+| 07_git_remote_fixed.png | Phase 1 | Git remote configuration fix using correct GitHub repo URL | Shows troubleshooting and Git workflow understanding | Resolved incorrect origin URL |
