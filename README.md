@@ -12,7 +12,7 @@ This project is a blue-team lab designed to simulate a realistic endpoint detect
 ## Planned Lab Components
 - Wazuh server
 - Windows endpoint
-- Optional Linux endpoint
+-  Linux endpoint
 - VirtualBox-based isolated network
 - Sysmon and endpoint telemetry
 - Detection validation scenarios
