@@ -1,17 +1,40 @@
 # Architecture Notes
 
-## Planned Systems
-- Wazuh server
-- Windows endpoint
-- Optional Linux endpoint
+## Lab Design
+- Wazuh Server (central monitoring)
+- Windows Endpoint
+- Linux Endpoint
 
-## Data Flow
-- Endpoint telemetry -> Wazuh manager
-- Alerts -> dashboard -> investigation workflow
+---
 
-## Network Design
-- NAT for package downloads and updates
-- Host-only for lab-internal communication
+## Network
+- NAT → external access
+- Host-Only → internal communication
 
-## Purpose
-Simulate a small endpoint-focused security monitoring environment suitable for detection validation and investigation practice.
+---
+
+## Issues and Fixes
+
+### VirtualBox Adapter Lock
+- Cause: VM running
+- Fix: Power off VM
+
+---
+
+### Linux Interface Down
+- Cause: Interface not activated
+- Fix:
+  - ip link set enp0s8 up
+  - dhclient enp0s8
+
+---
+
+### Windows ICMP Blocked
+- Cause: Firewall
+- Fix:
+netsh advfirewall firewall add rule name="Allow ICMPv4-In" protocol=icmpv4 dir=in action=allow
+
+---
+
+## Outcome
+Fully functional multi-system lab with validated networking

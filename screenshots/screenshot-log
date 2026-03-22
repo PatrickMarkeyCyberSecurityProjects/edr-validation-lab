@@ -2,5 +2,9 @@
 
 | Filename | Phase | What it shows | Why it matters | Notes |
 |----------|------|--------------|----------------|-------|
-| 04_architecture_diagram_v1.png | Phase 1 | Initial lab architecture diagram showing Wazuh server, Windows endpoint, and network layout | Demonstrates lab design and planning ability | Will refine after Phase 2 |
-| 07_git_remote_fixed.png | Phase 1 | Git remote configuration fix using correct GitHub repo URL | Shows troubleshooting and Git workflow understanding | Resolved incorrect origin URL |
+| 06_git_remote_fixed.png | Phase 1 | Fixed Git remote configuration | Shows Git troubleshooting ability | Corrected origin URL |
+| 07_host_only_adapter_fixed.png | Phase 2 | Host-Only adapter configured correctly in VirtualBox | Shows virtualization/network setup | Required for internal lab network |
+| 08_vm_connectivity_problem.png | Phase 2 | Initial connectivity failure between systems | Shows troubleshooting process | Used for debugging |
+| 09_windows_icmp_firewall_fix.png | Phase 2 | Windows firewall rule allowing ICMP traffic | Shows endpoint firewall troubleshooting | Required for ping success |
+| 10_wazuh_to_linux_ping_success.png | Phase 2 | Successful ping from Wazuh server to Linux endpoint | Confirms internal connectivity | Host-only network validated |
+| 11_full_connectivity_success.png | Phase 2 | Full connectivity between all lab systems | Final network validation | Phase 2 completion |

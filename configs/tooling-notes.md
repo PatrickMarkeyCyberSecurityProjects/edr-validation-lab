@@ -1,13 +1,17 @@
 # Tooling Notes
 
-## Installed
-- Git
-- VS Code
-- VirtualBox
-- Screenshot software
+## Virtualization
+- Oracle VirtualBox
 
-## Still Needed Later
-- Ubuntu 22.04 ISO
-- Windows 10/11 ISO
-- Wazuh installation files
-- Sysmon
+## OS
+- Ubuntu Server 22.04 (Wazuh + Linux)
+- Windows 10
+
+## Network
+- Host-Only: 192.168.56.0/24
+- DHCP enabled
+
+## Key Learnings
+- VM must be powered off to change network
+- Linux interfaces may require manual activation
+- Windows blocks ICMP by default
